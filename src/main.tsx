@@ -4,12 +4,10 @@ import App from "./App.tsx";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
-  brand: {
-    dark: "#0b1723",
-    900: "red",
-    800: "#153e75",
-    700: "#2a69ac",
-  },
+  dark: "#0b1723",
+  light: "#ecffce",
+  800: "#153e75",
+  700: "#2a69ac",
 };
 
 const theme = extendTheme({ colors });
