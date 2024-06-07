@@ -16,3 +16,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
+}
+
+.scroll-icon {
+  animation: animate 1s alternate infinite;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

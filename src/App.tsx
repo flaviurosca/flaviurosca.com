@@ -1,11 +1,15 @@
+import { Box } from "@chakra-ui/react";
 import "./App.css";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <Box className="App">
       <Home />
-    </div>
+      <div className="scroll-snap scroll-down" style={{ height: "100vh" }}>
+        test
+      </div>
+    </Box>
   );
 }
 
